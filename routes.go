@@ -2,6 +2,7 @@ package main
 
 import "net/http"
 
+// Route route struct
 type Route struct {
 	Name        string
 	Method      string
@@ -9,6 +10,7 @@ type Route struct {
 	HandlerFunc http.HandlerFunc
 }
 
+// Routes array of routes
 type Routes []Route
 
 var routes = Routes{
